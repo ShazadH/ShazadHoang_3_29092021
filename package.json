@@ -1,0 +1,14 @@
+{
+  "name": "p3_hoang_shazad",
+  "version": "1.0.0",
+  "description": "Projet 03 - Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/scss/header.scss:./style/css/header.css ./style/scss/footer.scss:./style/css/footer.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
+}
