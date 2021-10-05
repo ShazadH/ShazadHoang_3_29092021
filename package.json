@@ -4,7 +4,7 @@
   "description": "Projet 03 - Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style/scss/header.scss:./style/css/header.css ./style/scss/footer.scss:./style/css/footer.css"
+    "sass": "sass --watch ./style/scss/header.scss:./style/css/header.css ./style/scss/footer.scss:./style/css/footer.css ./style/scss/main.scss:./style/css/main.css"
   },
   "author": "",
   "license": "ISC",

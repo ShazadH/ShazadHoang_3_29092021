@@ -1,8 +1,16 @@
-div {
-  background-color: blue;
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  font-family: "Roboto", arial, sans-serif;
 }
-div nav {
-  color: black;
+
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 7px grey;
 }
 
 /*# sourceMappingURL=header.css.map */
