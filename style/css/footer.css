@@ -2,18 +2,23 @@ footer {
   background: #333232;
   padding: 1rem;
 }
-
-.footer__links {
+footer .title {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+footer .footer__links {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
 }
-.footer__links a {
+footer .footer__links a {
   text-decoration: none;
   color: white;
   margin-bottom: 0.5rem;
 }
-.footer__links a i {
+footer .footer__links a i {
   width: 1.5rem;
 }
 

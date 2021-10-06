@@ -1,0 +1,33 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+main img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+main .menu {
+  display: flex;
+  flex-direction: column;
+}
+main .menu__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+main .menu__title p {
+  margin: 0;
+}
+main .menu__title i {
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main-restaurant.css.map */

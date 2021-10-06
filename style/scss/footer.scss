@@ -1,20 +1,27 @@
 footer {
     background: #333232;
     padding: 1rem;
-}
 
-.footer__links {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-
-    a {
-        text-decoration: none;
+    .title {
+        font-family: "Shrikhand", cursive;
         color: white;
-        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
 
-        i {
-            width: 1.5rem;
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-bottom: 0.5rem;
+
+            i {
+                width: 1.5rem;
+            }
         }
     }
 }
