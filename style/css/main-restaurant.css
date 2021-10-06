@@ -11,6 +11,8 @@ main img {
 main .menu {
   display: flex;
   flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 1rem;
 }
 main .menu__title {
   font-family: "Shrikhand", cursive;
@@ -28,6 +30,45 @@ main .menu__title i {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main .menu__entree {
+  margin-bottom: 1rem;
+}
+main .menu__entree__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+}
+main .menu__entree__card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: 0 2px 7px #d3d0d0;
+  margin-bottom: 1rem;
+}
+main .menu__entree__card__text {
+  flex: 1;
+  min-width: 0;
+}
+main .menu__entree__card__text > h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+main .menu__entree__card__text > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 100;
+  margin: 0;
+}
+main .menu__entree__card__price {
+  align-self: flex-end;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main-restaurant.css.map */

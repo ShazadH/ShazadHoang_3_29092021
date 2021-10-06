@@ -1,3 +1,9 @@
+$gray: #f6f6f6;
+
+@mixin boxShadow {
+    box-shadow: 0 2px 7px rgb(211, 208, 208);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -12,6 +18,8 @@ main {
     .menu {
         display: flex;
         flex-direction: column;
+        background-color: $gray;
+        padding: 1rem;
 
         &__title {
             font-family: "Shrikhand", cursive;
@@ -34,6 +42,47 @@ main {
         }
 
         &__entree {
+            margin-bottom: 1rem;
+            &__title {
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 1rem;
+            }
+
+            &__card {
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 1.5rem;
+                padding: 1rem;
+                white-space: nowrap;
+                overflow: hidden;
+                @include boxShadow();
+                margin-bottom: 1rem;
+
+                &__text {
+                    flex: 1;
+                    min-width: 0;
+
+                    > h3 {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin: 0;
+                        margin-bottom: 0.5rem;
+                    }
+                    > p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-weight: 100;
+                        margin: 0;
+                    }
+                }
+
+                &__price {
+                    align-self: flex-end;
+                    margin: 0;
+                }
+            }
         }
     }
 }
