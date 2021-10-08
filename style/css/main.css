@@ -38,9 +38,15 @@
 .describ__button {
   margin-top: 1rem;
   text-decoration: none;
-  background-image: linear-gradient(350deg, #9052db, #f870d1);
+  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+  box-shadow: 0.25rem 0.25rem 10px #bebcbc;
   padding: 1rem;
   border-radius: 1.5rem;
+  z-index: 1;
+}
+.describ__button:hover {
+  box-shadow: 0.25rem 0.25rem 10px #9c9a9a;
+  background-image: linear-gradient(0deg, #9b63df, #ff88de);
 }
 
 .useDescrib {
@@ -90,6 +96,7 @@
   box-shadow: 0 2px 7px #d3d0d0;
   color: black;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 .restaurant .restaurant__card .restaurant__card__image {
   width: 100%;
@@ -113,6 +120,14 @@
 }
 .restaurant .restaurant__card .restaurant__card__info .restaurant__card__info__divIcon {
   font-size: 2rem;
+}
+.restaurant .restaurant__card .restaurant__card__span {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #1b6145;
+  padding: 0.5rem;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */
