@@ -16,15 +16,16 @@ main .menu {
 }
 main .menu__title {
   font-family: "Shrikhand", cursive;
-  font-size: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1rem;
 }
 main .menu__title p {
   margin: 0;
+  font-size: 1.5rem;
 }
 main .menu__title i {
+  margin-left: 2rem;
   font-size: 1.5rem;
   font-weight: 100;
   display: flex;
