@@ -4,6 +4,17 @@ $gray: #f6f6f6;
     box-shadow: 0 2px 7px rgb(211, 208, 208);
 }
 
+@keyframes cardAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -77,6 +88,8 @@ main {
                 @include boxShadow();
                 margin-bottom: 1rem;
                 cursor: pointer;
+                animation: cardAnimation 500ms ease-in;
+                animation-fill-mode: both;
 
                 &__text {
                     flex: 1;
@@ -158,4 +171,40 @@ main {
             }
         }
     }
+}
+
+#first {
+    animation-delay: 0ms;
+}
+
+#second {
+    animation-delay: 200ms;
+}
+
+#third {
+    animation-delay: 400ms;
+}
+
+#fourth {
+    animation-delay: 600ms;
+}
+
+#fifth {
+    animation-delay: 800ms;
+}
+
+#sixth {
+    animation-delay: 1000ms;
+}
+
+#seventh {
+    animation-delay: 1200ms;
+}
+
+#eighth {
+    animation-delay: 1400ms;
+}
+
+#nineth {
+    animation-delay: 1600ms;
 }
