@@ -50,6 +50,7 @@ main .menu__entree__card {
   overflow: hidden;
   box-shadow: 0 2px 7px #d3d0d0;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 main .menu__entree__card__text {
   flex: 1;
@@ -70,6 +71,33 @@ main .menu__entree__card__text > p {
 main .menu__entree__card__price {
   align-self: flex-end;
   margin: 0;
+}
+main .menu__entree__card--chosen {
+  background-color: #99e2d0;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -1rem -5rem -1rem 1rem;
+  transition-duration: 0.5s;
+}
+main .menu__entree__card--chosen-icon {
+  color: #99e2d0;
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(360deg);
+  transition-duration: 1000ms;
+}
+main .menu__entree__card:hover .menu__entree__card--chosen {
+  margin-right: -1rem;
+}
+main .menu__entree__card:hover .menu__entree__card--chosen-icon {
+  transform: rotate(0);
 }
 
 /*# sourceMappingURL=main-restaurant.css.map */
