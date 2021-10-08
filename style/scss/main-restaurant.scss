@@ -48,6 +48,18 @@ main {
                 text-transform: uppercase;
                 font-weight: 300;
                 font-size: 1rem;
+
+                &__text {
+                    margin-bottom: 0.4rem;
+                    font-weight: 300;
+                }
+
+                &__underline {
+                    width: 3rem;
+                    border-bottom: 3px solid #99e2d0;
+                    margin-top: 0;
+                    margin-bottom: 2rem;
+                }
             }
 
             &__card {

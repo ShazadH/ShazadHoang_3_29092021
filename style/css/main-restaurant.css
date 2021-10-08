@@ -40,6 +40,16 @@ main .menu__entree__title {
   font-weight: 300;
   font-size: 1rem;
 }
+main .menu__entree__title__text {
+  margin-bottom: 0.4rem;
+  font-weight: 300;
+}
+main .menu__entree__title__underline {
+  width: 3rem;
+  border-bottom: 3px solid #99e2d0;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
 main .menu__entree__card {
   display: flex;
   justify-content: space-between;
