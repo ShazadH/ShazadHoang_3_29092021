@@ -1,3 +1,47 @@
+@keyframes loader {
+  from {
+    z-index: 1005;
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  animation: loader 3000ms;
+  z-index: -105;
+  opacity: 0;
+}
+.loader__spin {
+  border: 16px solid #9356dc;
+  border-top: 16px solid #ff79da;
+  border-bottom: 16px solid #99e2d0;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 2s linear infinite;
+  animation-iteration-count: 4;
+}
+
 .search {
   display: flex;
   justify-content: center;
