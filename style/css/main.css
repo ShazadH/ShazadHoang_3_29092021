@@ -21,11 +21,8 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  text-align: center;
   height: 100%;
   width: 100%;
-  left: 0;
-  top: 0;
   background-color: white;
   animation: loader 3000ms;
   z-index: -105;
@@ -39,7 +36,6 @@
   width: 5rem;
   height: 5rem;
   animation: spin 2s linear infinite;
-  animation-iteration-count: 4;
 }
 
 .search {
