@@ -16,6 +16,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes popin {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
 .loader {
   display: flex;
   align-items: center;
@@ -160,6 +168,23 @@
 }
 .restaurant .restaurant__card .restaurant__card__info .restaurant__card__info__divIcon {
   font-size: 2rem;
+}
+.restaurant .restaurant__card .restaurant__card__info .restaurant__card__info__divIcon .fa-heart {
+  right: 3%;
+  bottom: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+.restaurant .restaurant__card .restaurant__card__info .restaurant__card__info__divIcon .regularHeart {
+  z-index: 1;
+}
+.restaurant .restaurant__card .restaurant__card__info .restaurant__card__info__divIcon .regularHeart:hover ~ .solidHeart {
+  opacity: 1;
+}
+.restaurant .restaurant__card .restaurant__card__info .restaurant__card__info__divIcon .solidHeart {
+  z-index: 0;
+  opacity: 0;
+  color: #9356dc;
 }
 .restaurant .restaurant__card .restaurant__card__span {
   position: absolute;
