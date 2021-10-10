@@ -100,11 +100,11 @@ main .menu__entree__card__price {
 }
 main .menu__entree__card--chosen {
   background-color: #99e2d0;
-  width: 4rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -1rem -5rem -1rem 1rem;
+  margin: -1rem -6rem -1rem 1rem;
   transition-duration: 0.5s;
 }
 main .menu__entree__card--chosen-icon {
