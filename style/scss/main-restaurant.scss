@@ -209,6 +209,7 @@ main {
             padding: 1rem 3rem;
             border-radius: 1.5rem;
             z-index: 1;
+            cursor: pointer;
             &:hover {
                 box-shadow: 0.25rem 0.25rem 10px #9c9a9a;
                 background-image: linear-gradient(
