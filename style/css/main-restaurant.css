@@ -8,6 +8,14 @@
     transform: translateY(0);
   }
 }
+@keyframes fillHeart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -38,13 +46,31 @@ main .menu__title p {
   margin: 0;
   font-size: 1.5rem;
 }
-main .menu__title i {
-  margin-left: 2rem;
-  font-size: 1.5rem;
-  font-weight: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main .menu__title .restaurant__card__info__divIcon {
+  font-size: 2rem;
+  position: relative;
+  margin-left: 1rem;
+}
+main .menu__title .restaurant__card__info__divIcon .fa-heart {
+  position: absolute;
+  cursor: pointer;
+}
+main .menu__title .restaurant__card__info__divIcon .regularHeart {
+  z-index: 1;
+}
+main .menu__title .restaurant__card__info__divIcon .regularHeart:hover ~ .solidHeart {
+  opacity: 1;
+  animation: fillHeart 1000ms;
+}
+main .menu__title .restaurant__card__info__divIcon .regularHeart:hover {
+  color: #9356dc;
+}
+main .menu__title .restaurant__card__info__divIcon .solidHeart {
+  z-index: 0;
+  opacity: 0;
+  background: -webkit-gradient(linear, right top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .menu__entree {
   margin-bottom: 1rem;

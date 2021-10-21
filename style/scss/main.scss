@@ -193,7 +193,6 @@ $third: #99e2d0;
                     z-index: 1;
                     &:hover ~ .solidHeart {
                         opacity: 1;
-                        // transition: fill 3000ms;
                         animation: fillHeart 1000ms;
                     }
                     &:hover {
@@ -203,7 +202,6 @@ $third: #99e2d0;
                 .solidHeart {
                     z-index: 0;
                     opacity: 0;
-                    // color: $primary;
                     background: -webkit-gradient(
                         linear,
                         right top,

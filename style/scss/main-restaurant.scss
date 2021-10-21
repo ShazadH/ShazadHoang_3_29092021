@@ -1,4 +1,7 @@
 $gray: #f6f6f6;
+$primary: #9356dc;
+$secondary: #ff79da;
+$third: #99e2d0;
 
 @mixin boxShadow {
     box-shadow: 0 2px 7px rgb(211, 208, 208);
@@ -12,6 +15,15 @@ $gray: #f6f6f6;
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fillHeart {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1.1);
     }
 }
 
@@ -47,13 +59,49 @@ main {
                 font-size: 1.5rem;
             }
 
-            i {
-                margin-left: 2rem;
-                font-size: 1.5rem;
-                font-weight: 100;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            // i {
+            //     margin-left: 2rem;
+            //     font-size: 1.5rem;
+            //     font-weight: 100;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
+
+            .restaurant__card__info__divIcon {
+                font-size: 2rem;
+                position: relative;
+                margin-left: 1rem;
+
+                .fa-heart {
+                    // right: 3%;
+                    // bottom: 1.5rem;
+                    position: absolute;
+                    cursor: pointer;
+                }
+                .regularHeart {
+                    z-index: 1;
+                    &:hover ~ .solidHeart {
+                        opacity: 1;
+                        animation: fillHeart 1000ms;
+                    }
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .solidHeart {
+                    z-index: 0;
+                    opacity: 0;
+                    background: -webkit-gradient(
+                        linear,
+                        right top,
+                        left bottom,
+                        from($primary),
+                        to($secondary)
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
         }
 
